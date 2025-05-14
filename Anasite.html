@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vamos Treinar, Ana!</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background: url('Car Keys GIF by Quadros Automoveis.gif') center center / cover no-repeat;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      color: #fff;
+      text-shadow: 2px 2px 4px #000;
+      animation: fadeIn 2s ease-in;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      animation: popUp 1.5s ease;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 1.2em;
+      border: none;
+      border-radius: 10px;
+      background-color: #ff6600;
+      color: white;
+      cursor: pointer;
+      box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #e65c00;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes popUp {
+      0% { transform: scale(0); opacity: 0; }
+      60% { transform: scale(1.1); opacity: 1; }
+      100% { transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+  <h1>Hora de treinar carros, Ana! 🚗💨</h1>
+  <h1>Não lembro como fazer site bonito, amém ao JavaScript</h2>
+
+  <button onclick="tocarMusica()">Pode clicar é um audio magnifico e bloquearam o audio automatico</button>
+
+  <audio id="audio">
+    <source src="Aquele Tok na buzina do caminhão-VEED.mp3" type="audio/mp3">
+    Seu navegador não suporta o elemento de áudio.
+  </audio>
+
+  <script>
+    function tocarMusica() {
+      const audio = document.getElementById('audio');
+      audio.play();
+    }
+  </script>
+</body>
+</html>
